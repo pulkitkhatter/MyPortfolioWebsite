@@ -1,14 +1,14 @@
-const toggle = document.querySelector('.nav-toggle');
-const menu = document.getElementById('menu');
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('nav');
 
 toggle.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
+    const open = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
 });
 
-menu.querySelectorAll('a').forEach((link) => {
+nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-        menu.classList.remove('open');
+        nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
     });
 });

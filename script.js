@@ -17,10 +17,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // rotate the role line in the terminal (static text stays if motion is reduced)
 const roles = [
-    'Cloud & DevOps engineer',
-    'One-to-one teacher',
+    'Founder, KATS Guru · Cloud & DevOps engineer',
+    'Builds software & cloud solutions',
     'AI / ML trainer & mentor',
-    'Founder, KATS Guru'
+    'One-to-one teacher'
 ];
 const roleEl = document.getElementById('role');
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

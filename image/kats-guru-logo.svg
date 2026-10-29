@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KATS Guru logo">
+    <rect width="64" height="64" rx="14" fill="#0f2942" stroke="#e0a534" stroke-width="0.8"/>
+    <rect x="14" y="27" width="36" height="23" rx="3" stroke="#f4f8fb" stroke-width="3" fill="none"/>
+    <path d="M20 50 L44 50 L41 56 L23 56 Z" stroke="#f4f8fb" stroke-width="3" stroke-linejoin="round" fill="none"/>
+    <circle cx="24" cy="38" r="2.1" fill="#e0a534"/><circle cx="32" cy="34.5" r="2.1" fill="#e0a534"/><circle cx="40" cy="38" r="2.1" fill="#e0a534"/>
+    <path d="M24 35.9 V32.4 H40 V35.9" stroke="#e0a534" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M32 32.2 V27" stroke="#e0a534" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M32 6 L56 15.5 L32 25 L8 15.5 Z" fill="#f4f8fb" stroke="#f4f8fb" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M18 19 V26 C18 26 23.5 29.5 32 29.5 C40.5 29.5 46 26 46 26 V19" stroke="#f4f8fb" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+    <path d="M51 17 V26" stroke="#f4f8fb" stroke-width="2.3" stroke-linecap="round"/><circle cx="51" cy="28.3" r="1.9" fill="#f4f8fb"/>
+  </svg>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,16 +11,16 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
 <header class="top">
-  <a class="mark" href="#top" aria-label="Pulkit Khatter, home">PK</a>
+  <a class="mark" href="#top" aria-label="Pulkit Khatter, home"><picture><source srcset="image/signature-white.svg" media="(prefers-color-scheme: dark)"><img src="image/signature.svg" alt="Pulkit Khatter" class="sig-nav" height="48"></picture></a>
   <nav aria-label="Primary">
     <a href="#founder">Founder</a>
-    <a href="#work">Work</a>
+    <a href="#work">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#expertise">Expertise</a>
     <a class="pill" href="#contact">Contact</a>
@@ -31,20 +31,20 @@
 
   <section class="hero wrap">
     <div class="hero-copy">
-      <p class="eyebrow">Founder, KATS Guru &nbsp;·&nbsp; Cloud &amp; DevOps Engineer</p>
-      <h1>I build cloud systems, grow a company, and teach people to do both.</h1>
-      <p class="lede">I founded KATS Guru to ship software and train teams. Before that I worked on AWS and Azure solutions at MoEngage, and I have mentored more than 6,000 learners, from school students to enterprise engineers.</p>
-      <div class="cta">
+      <p data-r class="eyebrow">Founder, KATS Guru &nbsp;·&nbsp; Cloud &amp; DevOps Engineer</p>
+      <h1 data-r>I build cloud systems, grow a company, and teach people to do both.</h1>
+      <p data-r class="lede">Cloud Engineer with hands-on experience across AWS and Microsoft Azure, CI/CD pipelines, Infrastructure as Code and Python automation. I build and ship cloud-connected applications as founder of KATS Guru, worked on cloud solutions at MoEngage, and have mentored 6,000+ students and delivered a six-month enterprise cloud training program.</p>
+      <div data-r class="cta">
         <a class="btn solid" href="https://wa.me/919996734575?text=Hi%20Pulkit%2C%20I%27d%20like%20to%20talk%20about%20a%20project%20or%20training." target="_blank" rel="noopener">Start a conversation</a>
         <a class="btn" href="pulkit_khatter_cv.pdf" download>Download CV</a>
       </div>
     </div>
-    <figure class="portrait">
+    <figure class="portrait" data-r>
       <img src="image/profile.jpg" srcset="image/profile.jpg 1200w, image/profile-2x.jpg 1919w, image/profile-4k.jpg 3071w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1500" alt="Pulkit Khatter, founder of KATS Guru" fetchpriority="high">
     </figure>
   </section>
 
-  <section class="facts wrap" aria-label="At a glance">
+  <section class="facts wrap" data-r aria-label="At a glance">
     <div><b>6,000+</b><span>learners mentored online</span></div>
     <div><b>3 yrs</b><span>in technical education</span></div>
     <div><b>6 months</b><span>corporate cloud training delivered</span></div>
@@ -53,12 +53,12 @@
 
   <section class="sec wrap" id="founder">
     <p class="num">01</p>
-    <div class="body">
-      <h2>Founder</h2>
+    <div class="body" data-r>
+      <div class="brand"><img src="image/kats-guru-logo.svg" alt="KATS Guru logo" width="84" height="84"><div><h2>Founder, KATS Guru</h2><p class="tag">Khatter All Technical Solutions &nbsp;·&nbsp; Learn. Build. Ship.</p></div></div>
       <p class="big">KATS Guru is a small team doing three things well: building software, training people, and helping businesses get found.</p>
       <ul class="cols">
-        <li><h3>Software</h3><p>Web and mobile applications, backend APIs and cloud deployments, delivered end to end for business clients.</p></li>
-        <li><h3>Training</h3><p>One-to-one and cohort programs in cloud, programming and AI, including a six-month corporate training engagement.</p></li>
+        <li><h3>Software</h3><p>Web and mobile apps, backend APIs and cloud deployments for business clients, including Hisaab Pro, a GST billing product.</p></li>
+        <li><h3>Training</h3><p>One-to-one and cohort programs in AWS, DevOps, full-stack and AI, including a six-month corporate cloud training engagement.</p></li>
         <li><h3>Marketing</h3><p>Content, social and growth support for small businesses that want to be found online.</p></li>
       </ul>
       <p class="links"><a href="https://katsguru.com" target="_blank" rel="noopener">katsguru.com</a><a href="https://www.youtube.com/@KatsCode" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/katsguru/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/kats-solutions/" target="_blank" rel="noopener">Company LinkedIn</a></p>
@@ -67,49 +67,50 @@
 
   <section class="sec wrap" id="work">
     <p class="num">02</p>
-    <div class="body">
-      <h2>Selected work</h2>
-      <article class="case">
-        <p class="meta">2026 &nbsp;·&nbsp; Cloud-connected CRM</p>
-        <h3>LeadZam Click-to-Call</h3>
-        <p>A CRM dashboard that pushes a call task to an Android phone in real time. A Node.js and Express backend sends high-priority Firebase Cloud Messaging data messages; a Kotlin app shows an in-app card or a background notification and opens the dialer with the number filled in. Delivery is tracked through to received, opened, dismissed and error states, with automated backend tests and verification on real FCM.</p>
-        <p class="tags"><span>Node.js</span><span>Express</span><span>Kotlin</span><span>Firebase Cloud Messaging</span><span>REST APIs</span></p>
-        <p class="links"><a href="https://github.com/pulkitkhatter" target="_blank" rel="noopener">View on GitHub</a></p>
-      </article>
+    <div class="body" data-r>
+      <h2>Projects</h2>
+      <div class="cases">
+      <article class="case" data-r><p class="meta">2026 · Cloud-connected CRM</p><h3>LeadZam Click-to-Call</h3><ul class="pts"><li>Built a Node.js/Express backend with REST APIs that sends high-priority Firebase Cloud Messaging data messages from a CRM dashboard to an Android device.</li><li>Developed a Kotlin Android app with in-app and background notifications that opens the native dialer with the number pre-filled.</li><li>Implemented delivery tracking (received, opened, dismissed, error) through an acknowledgement API with automated backend tests; verified end to end on real FCM.</li></ul><p class="tags"><span>Node.js</span><span>Express</span><span>Kotlin</span><span>Firebase Cloud Messaging</span><span>REST API</span></p><p class="links"><a href="https://github.com/pulkitkhatter" target="_blank" rel="noopener">View on GitHub</a></p></article>
+      <article class="case" data-r><p class="meta">2026 · AWS · Infrastructure as Code</p><h3>Three-Tier Web App on AWS with Terraform and CI/CD</h3><ul class="pts"><li>Provisioned a VPC with public/private subnets, Application Load Balancer, Auto Scaling EC2 and RDS using reusable Terraform modules with remote state in S3.</li><li>Built a GitHub Actions pipeline to test, build a Docker image and deploy with zero downtime; added CloudWatch alarms and dashboards for health and latency.</li><li>Applied least-privilege IAM roles, security groups and Secrets Manager for credentials.</li></ul><p class="tags"><span>AWS</span><span>Terraform</span><span>Docker</span><span>GitHub Actions</span><span>CloudWatch</span><span>IAM</span></p></article>
+      <article class="case" data-r><p class="meta">2026 · Azure · Kubernetes</p><h3>Containerized Microservices on Azure Kubernetes Service</h3><ul class="pts"><li>Containerized services with Docker, stored images in Azure Container Registry and deployed to AKS using Helm charts.</li><li>Automated build and release through an Azure DevOps pipeline with environment approvals; enabled autoscaling and monitoring with Azure Monitor.</li></ul><p class="tags"><span>Azure</span><span>AKS</span><span>Docker</span><span>Helm</span><span>Azure DevOps</span><span>Azure Monitor</span></p></article>
+      <article class="case" data-r><p class="meta">2026 · AWS · Serverless</p><h3>Serverless Event-Driven Data Pipeline on AWS</h3><ul class="pts"><li>Designed an event-driven pipeline with API Gateway, Lambda, SQS, DynamoDB and S3, defined as code with AWS SAM and deployed through CI/CD.</li><li>Added dead-letter queues, retries, structured logging and CloudWatch alerts for reliability.</li></ul><p class="tags"><span>AWS Lambda</span><span>API Gateway</span><span>SQS</span><span>DynamoDB</span><span>S3</span><span>SAM</span><span>Python</span></p></article>
+      </div>
     </div>
   </section>
 
   <section class="sec wrap" id="experience">
     <p class="num">03</p>
-    <div class="body">
+    <div class="body" data-r>
       <h2>Experience</h2>
       <ol class="timeline">
-        <li><p class="when">Present</p><div><h3>Founder, KATS Guru</h3><p>Lead software delivery, training programs and client work. Delivered a six-month cloud training engagement for enterprise teams in cohort and one-to-one formats.</p></div></li>
-        <li><p class="when">Apr 2025 – Oct 2026</p><div><h3>AI/ML &amp; Robotics Instructor, Level 3 · Moonpreneur</h3><p>Taught Python, machine learning fundamentals and agentic AI to learners aged 6 to 20. Promoted to Level 3 in about eight months and designed project-based curriculum.</p></div></li>
-        <li><p class="when">Aug – Dec 2024</p><div><h3>Solutions Engineer Intern · MoEngage</h3><p>Worked on cloud solutions with AWS, Azure, CI/CD pipelines and ServiceNow, and delivered cloud and AI training sessions.</p></div></li>
-        <li><p class="when">2021 – 2025</p><div><h3>B.Tech (Hons), Computer Software Engineering · Lovely Professional University</h3><p>CGPA 8.8.</p></div></li>
-      </ol>
+        <li><p class="when">Present</p><div><h3>Founder · KATS Guru / KATS Services</h3><ul class="pts"><li>Build and deliver software and cloud-connected solutions for freelance and business clients end to end: requirements, backend APIs, web and mobile.</li><li>Delivered a 6-month cloud training program for enterprise teams in cohort-based and 1:1 formats.</li><li>Mentor professionals and students in AWS, Azure, Python and AI through hands-on labs and projects.</li></ul></div></li>
+        <li><p class="when">Apr 2025 – Oct 2026</p><div><h3>AI/ML &amp; Robotics Instructor (Level 3) · Moonpreneur</h3><ul class="pts"><li>Promoted to Level 3 within about eight months; taught Python, machine learning fundamentals and agentic AI to students aged 6 to 20.</li><li>Designed and delivered structured, project-based technical curriculum; trained 6,000+ students online over 3 years of mentoring.</li></ul></div></li>
+        <li><p class="when">Aug – Dec 2024</p><div><h3>Solutions Engineer Intern · MoEngage</h3><ul class="pts"><li>Worked on cloud solutions using AWS, Azure and CI/CD pipelines.</li><li>Delivered cloud and AI training sessions to internal teams as part of the role.</li></ul></div></li>
+        <li><p class="when">2021 – 2025</p><div><h3>B.Tech (Hons), Computer Software Engineering · Lovely Professional University</h3><ul class="pts"><li>CGPA: 8.8</li></ul></div></li>
+        </ol>
     </div>
   </section>
 
   <section class="sec wrap" id="expertise">
     <p class="num">04</p>
-    <div class="body">
+    <div class="body" data-r>
       <h2>Expertise</h2>
       <dl class="skills">
-        <div><dt>Cloud &amp; DevOps</dt><dd>AWS · Microsoft Azure · CI/CD · Docker · Terraform · ServiceNow</dd></div>
-        <div><dt>Engineering</dt><dd>Python · Java · JavaScript (Node.js) · Kotlin · C/C++ · REST APIs · Android</dd></div>
-        <div><dt>AI</dt><dd>Machine learning fundamentals · Agentic AI · Applied AI solutions</dd></div>
-        <div><dt>Mentoring</dt><dd>Curriculum design · One-to-one coaching · Cohort and corporate training</dd></div>
+        <div><dt>Cloud Platforms</dt><dd>AWS (EC2, S3, VPC, IAM, RDS, Lambda, CloudWatch) · Microsoft Azure (VMs, AKS, Azure DevOps) · Firebase Cloud Messaging</dd></div>
+        <div><dt>DevOps &amp; IaC</dt><dd>CI/CD · GitHub Actions · Azure DevOps · Jenkins · Docker · Kubernetes · Terraform · Git · Linux · Bash</dd></div>
+        <div><dt>Programming</dt><dd>Python · Java · JavaScript (Node.js, Express) · Kotlin · C/C++ · SQL</dd></div>
+        <div><dt>Application &amp; AI</dt><dd>REST APIs · Microservices · Android · Full-Stack Web · Machine Learning fundamentals · Agentic AI</dd></div>
+        <div><dt>Practices</dt><dd>Cloud Security (IAM, least privilege) · Monitoring &amp; Logging · Automated Testing · Agile · Technical Documentation</dd></div>
       </dl>
     </div>
   </section>
 
   <section class="sec wrap" id="contact">
     <p class="num">05</p>
-    <div class="body">
+    <div class="body" data-r>
       <h2>Let's talk</h2>
       <p class="big">For projects, training programs or roles, WhatsApp is the fastest way to reach me.</p>
+      <picture><source srcset="image/signature-white.svg" media="(prefers-color-scheme: dark)"><img src="image/signature.svg" alt="Pulkit Khatter" class="sig-big" height="48"></picture>
       <ul class="contact">
         <li><a href="https://wa.me/919996734575?text=Hi%20Pulkit%2C%20I%27d%20like%20to%20talk%20about%20a%20project%20or%20training." target="_blank" rel="noopener"><span>WhatsApp</span>+91 99967 34575</a></li>
         <li><a href="mailto:pulkitkhatter13@gmail.com"><span>Email</span>pulkitkhatter13@gmail.com</a></li>
@@ -122,9 +123,10 @@
 </main>
 
 <footer class="wrap">
-  <span>© <span id="year">2026</span> Pulkit Khatter</span>
+  <span>© <span id="year">2026</span> Pulkit Khatter · <a href="https://katsguru.com">KATS Guru</a></span>
   <a href="#top">Back to top ↑</a>
 </footer>
-<script src="script.js"></script>
+<script>document.documentElement.className="js"</script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

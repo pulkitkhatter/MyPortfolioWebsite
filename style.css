@@ -1,10 +1,10 @@
 :root{
-  --bg:#f7f5f0; --ink:#14171c; --muted:#5d6470; --line:#dcd8cf; --card:#fff; --accent:#1f3a5f;
+  --bg:#f7f5f0; --ink:#14171c; --muted:#5d6470; --line:#dcd8cf; --card:#fff; --accent:#0f2942; --gold:#e0a534;
   --serif:"Newsreader",Georgia,serif; --sans:"Instrument Sans",system-ui,-apple-system,Segoe UI,sans-serif;
   --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0f1216;--ink:#eceae4;--muted:#9aa1ad;--line:#262b33;--card:#161a20;--accent:#9db7d9}
+  :root{--bg:#0f1216;--ink:#eceae4;--muted:#9aa1ad;--line:#262b33;--card:#161a20;--accent:#e0a534}
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -121,3 +121,12 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offse
 h1,h2,.big{text-wrap:balance}
 p,li{text-wrap:pretty}
 .facts b{font-variant-numeric:tabular-nums}
+
+/* KATS Guru brand accents */
+.eyebrow,.tag,.meta{color:var(--accent)!important}
+.links a{text-decoration-color:var(--gold)}
+.links a:hover{text-decoration-color:var(--ink)}
+.top nav a:not(.pill)::after{background:var(--gold);height:2px}
+.brand img{box-shadow:0 0 0 1px color-mix(in srgb,var(--gold) 60%,transparent)}
+.big::before{content:"";display:block;width:2.5rem;height:3px;background:var(--gold);margin-bottom:1rem}
+::selection{background:var(--gold);color:#0a1826}

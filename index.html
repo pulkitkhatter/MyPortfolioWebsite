@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -32,23 +32,23 @@
   <section class="hero wrap">
     <div class="hero-copy">
       <p data-r class="eyebrow">Founder, KATS Guru &nbsp;·&nbsp; Cloud &amp; DevOps Engineer</p>
-      <h1 data-r>I build cloud systems, grow a company, and teach people to do both.</h1>
+      <h1 data-r>I build <em>cloud systems</em>, grow a <em>company</em>, and <em>teach</em> people to do both.</h1>
       <p data-r class="lede">Cloud Engineer with hands-on experience across AWS and Microsoft Azure, CI/CD pipelines, Infrastructure as Code and Python automation. I build and ship cloud-connected applications as founder of KATS Guru, worked on cloud solutions at MoEngage, and have mentored 6,000+ students and delivered a six-month enterprise cloud training program.</p>
       <div data-r class="cta">
         <a class="btn solid" href="https://wa.me/919996734575?text=Hi%20Pulkit%2C%20I%27d%20like%20to%20talk%20about%20a%20project%20or%20training." target="_blank" rel="noopener">Start a conversation</a>
         <a class="btn" href="pulkit_khatter_cv.pdf" download>Download CV</a>
       </div>
     </div>
-    <figure class="portrait" data-r>
-      <img src="image/profile.jpg" srcset="image/profile.jpg 1200w, image/profile-2x.jpg 1919w, image/profile-4k.jpg 3071w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1500" alt="Pulkit Khatter, founder of KATS Guru" fetchpriority="high">
-    </figure>
+    <figure class="portrait" data-r><div class="frame"><img src="image/profile.jpg" srcset="image/profile.jpg 1200w, image/profile-2x.jpg 1919w, image/profile-4k.jpg 3071w" sizes="(max-width: 860px) 90vw, 440px" width="1200" height="1500" alt="Pulkit Khatter, founder of KATS Guru" fetchpriority="high"></div><svg class="badge" viewBox="0 0 160 160" aria-hidden="true"><defs><path id="circ" d="M80,80 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/></defs><circle cx="80" cy="80" r="76" class="bd-bg"/><text class="bd-text"><textPath href="#circ" startOffset="0">FOUNDER · KATS GURU · CLOUD ENGINEER · DEVOPS ·</textPath></text><g class="bd-star"><path d="M80 66 L83 77 L94 80 L83 83 L80 94 L77 83 L66 80 L77 77Z"/></g></svg></figure>
   </section>
 
+  <div class="marquee" aria-hidden="true"><div class="track"><span>AWS</span><span>Microsoft Azure</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Python</span><span>Node.js</span><span>Kotlin</span><span>Java</span><span>Linux</span><span>Agentic AI</span><span>AWS</span><span>Microsoft Azure</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Python</span><span>Node.js</span><span>Kotlin</span><span>Java</span><span>Linux</span><span>Agentic AI</span></div></div>
+
   <section class="facts wrap" data-r aria-label="At a glance">
-    <div><b>6,000+</b><span>learners mentored online</span></div>
+    <div><b><span data-count="6000" data-suffix="+">6,000+</span></b><span>learners mentored online</span></div>
     <div><b>3 yrs</b><span>in technical education</span></div>
     <div><b>6 months</b><span>corporate cloud training delivered</span></div>
-    <div><b>8.8</b><span>CGPA, B.Tech (Hons) CSE</span></div>
+    <div><b><span data-count="8.8" data-dec="1">8.8</span></b><span>CGPA, B.Tech (Hons) CSE</span></div>
   </section>
 
   <section class="sec wrap" id="founder">
@@ -65,8 +65,39 @@
     </div>
   </section>
 
-  <section class="sec wrap" id="work">
+  <section class="sec wrap" id="how">
     <p class="num">02</p>
+    <div class="body" data-r>
+      <h2>How I ship</h2>
+      <p class="big">Every project follows the same loop: commit, build, test, deploy, watch.</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 920 330" role="img" aria-label="Diagram: a CI/CD pipeline above a three-tier cloud architecture">
+          <g class="d-pipe">
+            <path id="pl" class="flow" d="M90 52 H830"/>
+            <g class="node"><rect x="20" y="24" width="140" height="56" rx="12"/><text x="90" y="58" text-anchor="middle">Commit</text></g>
+            <g class="node"><rect x="200" y="24" width="140" height="56" rx="12"/><text x="270" y="58" text-anchor="middle">Build</text></g>
+            <g class="node"><rect x="380" y="24" width="140" height="56" rx="12"/><text x="450" y="58" text-anchor="middle">Test</text></g>
+            <g class="node"><rect x="560" y="24" width="140" height="56" rx="12"/><text x="630" y="58" text-anchor="middle">Deploy</text></g>
+            <g class="node hot"><rect x="740" y="24" width="140" height="56" rx="12"/><text x="810" y="58" text-anchor="middle">Monitor</text></g>
+            <circle class="pulse" r="5"><animateMotion dur="5s" repeatCount="indefinite" path="M90 52 H830"/></circle>
+          </g>
+          <g class="d-arch">
+            <path class="flow f2" d="M170 230 H250 M390 230 H470 M610 230 H690"/>
+            <path class="flow f2" d="M530 230 L560 200 M530 230 L560 260"/>
+            <g class="node soft"><rect x="40" y="198" width="130" height="64" rx="12"/><text x="105" y="226" text-anchor="middle">Users</text><text x="105" y="246" text-anchor="middle" class="sub">web · mobile</text></g>
+            <g class="node soft"><rect x="250" y="198" width="140" height="64" rx="12"/><text x="320" y="226" text-anchor="middle">Load balancer</text><text x="320" y="246" text-anchor="middle" class="sub">ALB · API gateway</text></g>
+            <g class="node soft"><rect x="470" y="170" width="130" height="44" rx="12"/><text x="535" y="198" text-anchor="middle">Service A</text></g>
+            <g class="node soft"><rect x="470" y="246" width="130" height="44" rx="12"/><text x="535" y="274" text-anchor="middle">Service B</text></g>
+            <g class="node soft"><rect x="690" y="198" width="140" height="64" rx="12"/><text x="760" y="226" text-anchor="middle">Data</text><text x="760" y="246" text-anchor="middle" class="sub">RDS · DynamoDB</text></g>
+          </g>
+        </svg>
+        <figcaption>Infrastructure as code, containers and managed services on AWS and Azure, released through automated pipelines.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="work">
+    <p class="num">03</p>
     <div class="body" data-r>
       <h2>Projects</h2>
       <div class="cases">
@@ -79,7 +110,7 @@
   </section>
 
   <section class="sec wrap" id="experience">
-    <p class="num">03</p>
+    <p class="num">04</p>
     <div class="body" data-r>
       <h2>Experience</h2>
       <ol class="timeline">
@@ -92,7 +123,7 @@
   </section>
 
   <section class="sec wrap" id="expertise">
-    <p class="num">04</p>
+    <p class="num">05</p>
     <div class="body" data-r>
       <h2>Expertise</h2>
       <dl class="skills">
@@ -106,7 +137,7 @@
   </section>
 
   <section class="sec wrap" id="contact">
-    <p class="num">05</p>
+    <p class="num">06</p>
     <div class="body" data-r>
       <h2>Let's talk</h2>
       <p class="big">For projects, training programs or roles, WhatsApp is the fastest way to reach me.</p>
@@ -127,6 +158,6 @@
   <a href="#top">Back to top ↑</a>
 </footer>
 <script>document.documentElement.className="js"</script>
-<script src="script.js?v=3"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
